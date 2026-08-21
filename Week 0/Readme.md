@@ -21,7 +21,7 @@ In our 5-member team (Executive Reporting), I served as **Member D: Team Charter
 I executed SQL scripts via Supabase's SQL Editor to establish a queryable team contract. The system is fully operational.
 * **SQL Query Used:** See `hello_urbanstyle.sql`
 * **Proof of Completion:** 
-  ![Supabase Charter Query](./individual/setup_screenshot.png)
+  ![Supabase Charter Query](./individual/supabase_charter_success.png)
 
 ## 5. Reflections & AI Transparency
 * **What Surprised Me:** I was surprised by how quickly we could connect multiple local VS Code environments to a shared cloud database, but we learned a valuable lesson in debugging terminal SQL syntax loops.
