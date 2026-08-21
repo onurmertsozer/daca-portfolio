@@ -26,3 +26,11 @@ I executed SQL scripts via Supabase's SQL Editor to establish a queryable team c
 ## 5. Reflections & AI Transparency
 * **What Surprised Me:** I was surprised by how quickly we could connect multiple local VS Code environments to a shared cloud database, but we learned a valuable lesson in debugging terminal SQL syntax loops.
 * **AI Assistance:** I utilized AI (Notebook/Gemini) to double-check my SQL syntax for creating tables and to help format this markdown documentation.
+
+* ## 🔗 Shared Team Environments
+To facilitate seamless collaboration, our Executive Reporting team established the following shared environments:
+**Communication Channel: Google Chat
+**File Sharing: Google Drive:https://drive.google.com/drive/folders/1GtLdXloE2sWS557DMwciFvcSpefNiFEJ?usp=sharing
+**GitHub Repository:https://github.com/fatimarahimi/urbanstyle-executive-reporting
+**Supabase Project:https://kopndhwxxvtcflwllgba.supabase.co
+**NotebookLM Shared Space:https://notebook.google.com/notebook/549816ff-01a9-47f6-a837-862d47157426
