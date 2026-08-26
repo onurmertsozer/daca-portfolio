@@ -18,7 +18,9 @@ The SQL script containing all these queries is fully documented and saved in my 
 ## 3. Key Findings (The Data Landscape)
 * **Sales Volume:** The `sales` table contains exactly **15,234 rows** but only **10,118 unique** `sale_id` values. This suggests multi-line orders or duplicate records that we must investigate further in Week 2.
 * **Premium Transactions:** Verified that the highest-value transaction in our database is the premium sneaker **"Õhuline sünteetiline sporditossud"** with a retail price of **€434.08**.
-* **0 Guest Sales:** The database contains exactly **0 transactions with missing customer IDs** (`customer_id IS NULL`). This proves that every single transaction in our database is linked to a registered customer.
+
+1,487 Guest Sales: The database contains exactly 1,487 transactions with missing customer IDs (customer_id IS NULL), representing guest purchases
+. This means nearly 10% of our sales are not linked to registered customer profiles, which presents a challenge for personalized marketing campaigns
 
 ## 4. Reflections & AI Transparency
 * **What Surprised Me:** I was surprised to find exactly 0 guest transactions. In standard retail databases, guest checkouts are common. This implies a highly mandatory registration funnel or successful CRM matching at the POS.
