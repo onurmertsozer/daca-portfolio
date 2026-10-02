@@ -1,0 +1,53 @@
+-- DACA Week 2: SQL Cross-Validation & QA — Role D (Data Quality Analyst)
+-- Participant: Onur
+-- Target: Auditing database relational integrity across tables
+-- ====================================================================
+
+-- STEP 1: Orphan Customers Check
+-- Are there any customer IDs in the sales table that do NOT exist in customers?
+-- (Expected result: 0 rows | Actual: 0)
+SELECT COUNT(*) AS orphan_customer_count
+FROM sales
+WHERE customer_id IS NOT NULL  
+  AND customer_id NOT IN (
+      SELECT customer_id 
+      FROM customers 
+      WHERE customer_id IS NOT NULL
+  );
+
+
+-- STEP 2: Orphan Products Check
+-- Are there any product IDs in the sales table that do NOT exist in products?
+-- (Expected result: 0 rows | Actual: 0)
+SELECT COUNT(*) AS orphan_product_count
+FROM sales
+WHERE product_id IS NOT NULL  
+  AND product_id NOT IN (
+      SELECT product_id 
+      FROM products 
+      WHERE product_id IS NOT NULL
+  );
+
+
+-- STEP 3: Dormant Customers Check
+-- How many registered customers have never made a single purchase in our store?
+-- (Expected result: ~10-20% of base | Actual: 592)
+SELECT COUNT(*) AS dormant_customer_count
+FROM customers
+WHERE customer_id NOT IN (
+    SELECT customer_id 
+    FROM sales 
+    WHERE customer_id IS NOT NULL
+);
+
+
+-- STEP 4: Unsold Products Check
+-- How many products in our catalog have never been sold to any customer?
+-- (Expected result: Low count | Actual: 12)
+SELECT COUNT(*) AS unsold_product_count
+FROM products
+WHERE product_id NOT IN (
+    SELECT product_id 
+    FROM sales 
+    WHERE product_id IS NOT NULL
+);
