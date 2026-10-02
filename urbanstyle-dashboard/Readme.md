@@ -1,2 +1,34 @@
-\# Week 6: Visualisation Design &amp; Data Storytelling — UrbanStyle Online Store (Role D) 📜 \*For previous documentation, see: [Week 5 README](./README\_WEEK5.md)\* ## 📌 Executive Business Context This interactive analytics dashboard supports \*\*Marketing Lead Anna Mets\*\* and \*\*CEO Kristi Tamm\*\* in evaluating the performance and growth trajectory of UrbanStyle's digital sales channel (\*\*Role D: Online Store Analyst\*\*). --- ## 🔗 Live Demo &amp; Deployment \* \*\*Live Streamlit Dashboard:\*\* [https://daca-portfolio-tejvvr2yn4vbodq2weaox6.streamlit.app/](https://daca-portfolio-tejvvr2yn4vbodq2weaox6.streamlit.app/)
-\--- ## 🎯 Data Story Framework (Knaflic Model) 1\. \*\*Setup (Context):\*\* The Online Store is UrbanStyle's fastest-growing digital channel, supported by a steadily expanding monthly customer base across Estonia. 2\. \*\*Data &amp; Conflict (Key Findings):\*\* Q4 digital marketing campaigns generated a record peak monthly revenue of \*\*€170,623\*\* in December (+54.3% MoM growth), with \*\*Footwear\*\* accounting for 35% of total online sales. 3\. \*\*Action &amp; Recommendations:\*\* We recommend increasing the digital marketing budget by 30%, strengthening online footwear inventory replenishment, and expanding fulfillment logistics capacity. --- ## 🛠️ Technical Polish &amp; Visual Design \* \*\*Annotations:\*\* Added Plotly callout arrows marking the Q4 December campaign peak (+54.3% MoM). \* \*\*Reference Line:\*\* Established a monthly baseline target line at \*\*€75,000/month\*\* for clear target benchmarking. \* \*\*KPI Metrics:\*\* Built top-level metric cards for Total Revenue (\*\*€1.05M\*\*), Peak Revenue (\*\*€170.6k\*\*), AOV (\*\*€82.40\*\*), and Conversion Rate (\*\*2.85%\*\*). --- ## 💻 How to Run Locally \`\`\`bash cd urbanstyle-dashboard source .venv/bin/activate streamlit run app.py
+# Week 6: Visualisation Design & Data Storytelling — UrbanStyle Online Store (Role D) 📜
+
+*For previous documentation, see: [Week 5 README](./README_WEEK5.md)*
+
+## 📌 Executive Business Context
+This interactive analytics dashboard supports **Marketing Lead Anna Mets** and **CEO Kristi Tamm** in evaluating the performance and growth trajectory of UrbanStyle's digital sales channel (**Role D: Online Store Analyst**).
+
+---
+
+## 🔗 Live Demo & Deployment
+* **Live Streamlit Dashboard:** [UrbanStyle Online Store Dashboard](https://daca-portfolio-tejvvr2yn4vbodq2weaox6.streamlit.app/)
+
+---
+
+## 🎯 Data Story Framework (Knaflic Model)
+1. **Setup (Context):** The Online Store is UrbanStyle's fastest-growing digital channel, supported by a steadily expanding monthly customer base across Estonia.
+2. **Data & Conflict (Key Findings):** Q4 digital marketing campaigns generated a record peak monthly revenue of **€170,623** in December (+54.3% MoM growth), with **Footwear** accounting for 35% of total online sales.
+3. **Action & Recommendations:** We recommend increasing the digital marketing budget by 30%, strengthening online footwear inventory replenishment, and expanding fulfillment logistics capacity.
+
+---
+
+## 🛠️️ Technical Polish & Visual Design
+* **Annotations:** Added Plotly callout arrows marking the Q4 December campaign peak (+54.3% MoM).
+* **Reference Line:** Established a monthly baseline target line at **€75,000/month** for clear target benchmarking.
+* **KPI Metrics:** Built top-level metric cards for Total Revenue (**€1.05M**), Peak Revenue (**€170.6k**), AOV (**€82.40**), and Conversion Rate (**2.85%**).
+
+---
+
+## 💻 How to Run Locally
+
+```bash
+cd urbanstyle-dashboard
+source .venv/bin/activate
+streamlit run app.py
