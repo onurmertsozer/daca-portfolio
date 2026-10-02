@@ -58,14 +58,13 @@ fig1 = px.line(
 fig1.add_annotation(
     x="Dec 2024",
     y=170623,
-    text="<b>Q4 Campaign Peak</b><br>+54.3% MoM Growth",
+    text="Q4 Campaign Peak<br>+54.3% MoM Growth",
     showarrow=True,
     arrowhead=2,
-    arrowcolor="#00E5FF",
-    bgcolor="#1E293B",        # Koyu ve kontrastlı arka plan
-    bordercolor="#00E5FF",    # Canlı turkuaz çerçeve
-    borderwidth=1.5,
-    font=dict(color="#FFFFFF", size=12) # Parlak beyaz yazı
+    arrowcolor="#009B8D",
+    bgcolor="#E0F7FA",
+    bordercolor="#009B8D",
+    borderwidth=1
 )
 
 # Reference Line for Target
