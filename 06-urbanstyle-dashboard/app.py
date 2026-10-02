@@ -54,7 +54,7 @@ fig1 = px.line(
     color_discrete_sequence=["#009B8D"]
 )
 
-# Annotation for Peak Campaign
+# Annotation for Peak Campaign (Yazı rengi koyu temada okunabilir yapıldı)
 fig1.add_annotation(
     x="Dec 2024",
     y=170623,
@@ -64,7 +64,8 @@ fig1.add_annotation(
     arrowcolor="#009B8D",
     bgcolor="#E0F7FA",
     bordercolor="#009B8D",
-    borderwidth=1
+    borderwidth=1,
+    font=dict(color="#004D40")
 )
 
 # Reference Line for Target
